@@ -1,0 +1,290 @@
+body{
+  font-family: Arial, san-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  
+}
+
+.logo{
+width: 50px;
+padding-bottom:20px;
+padding-left: 10px;
+}
+
+
+.register-title{
+display: flex;
+justify-content: center;
+background-color: #f4f4f4;;
+
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form-input{
+width: 400px;
+height: 25px;
+}
+
+
+.button{
+width: 100px;
+padding: 8px;
+background-color: green;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+}
+
+.button:hover{
+opacity: 0.8;
+}
+
+.button:active{
+transform: scale(0.98);
+}
+
+.register-form-div{
+background-color: white;
+margin: 1rem;
+padding: 1rem;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+.div-title {
+    flex-direction: column;
+}
+
+.form-input {
+    max-width: 100%;
+}
+
+.register-title {
+    padding: 0 10px;
+    text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+.logo {
+    width: 40px;
+}
+
+.button {
+    width: 80px;
+}
+}
+
+/* INDEX.HTML CSS */
+.nav-logo{
+width: 50px;
+padding-bottom:20px;
+padding-left: 10px;
+}
+
+.div-navTitle{
+display: flex;
+margin-left: 20px;
+}
+
+.nav-title{
+color: white;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 30px;
+letter-spacing: 5px;
+}
+
+.nav-bar{
+background-color: green;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.nav-div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+li{
+list-style: none;
+display: inline-block;
+}
+
+li a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+font-weight: bold;
+margin-right: 50px;
+}
+
+.welcome-text1, .welcome-text2{
+display: flex;
+justify-content: center;
+}
+
+.div-welcomeTxt{
+background-color: white;
+margin-right: 20px;
+margin-left: 20px;
+border-radius: 10px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.coin-pic{
+width: 600px;
+margin-left: 300px;
+border-radius: 20px;
+} 
+
+.article-title {
+text-align: center;
+margin: 1rem 0;
+}
+
+.article {
+background-color: white;
+margin: 1rem auto;
+padding: 1rem;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+}
+
+.article h3 {
+margin-top: 0;
+}
+
+.article p {
+margin-bottom: 1rem;
+} 
+
+.footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 1rem 0;
+margin-top: 1rem;
+margin-bottom: 0;
+font-style: italic;
+}
+
+.footer a {
+color: #4CAF50;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+} 
+
+
+/* ADD.HTML CSS */
+.add-title, .expenses-list {
+display: flex;
+justify-content: center;
+}
+
+.add-div{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+margin-left: 220px;
+margin-bottom: 70px;
+padding: 30px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 700px;
+}
+
+/* .add-buttons{
+display: inline;
+} */
+
+.category-input{
+width: 300px;
+height: 25px;
+}
+
+.amount-input{
+width: 200px;
+height: 25px;
+}
+
+.add-button{
+width: 100px;
+padding: 8px;
+background-color: green;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+margin-right: 50px;
+margin-bottom: 20px;
+margin-top: 0px;
+cursor: pointer;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+tfoot{
+    font-weight: bold;
+}
+
+.delete-btn{
+width: 100px;
+padding: 8px;
+background-color: green;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#transactions, #budget-settings {
+    margin: 20px;
+}
+
+.transaction, .setting {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.transaction div, .setting div {
+    display: inline-block;
+    width: 30%;
+}
+
+/* EDIT.HTML CSS */
+.save-button{
+width: 100px;
+padding: 8px;
+background-color: green;
+border: none;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+}

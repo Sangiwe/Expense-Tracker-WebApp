@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-div">
+         <div class="div-navTitle">
+         <h1 class="nav-title">PennyWise</h1>
+         <img class="nav-logo" src="https://th.bing.com/th/id/R.49d5a14318a9684e150d97994dbea9b0?rik=XZ2A4kky5%2bpACg&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fmoney-icon-transparent-background%2fmoney-icon-transparent-background-25.png&ehk=tc0EXgQ%2fk2qFKqmOZg%2fqDcnJXu4HGeFfH3pJPPS6Dj4%3d&risl=&pid=ImgRaw&r=0">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register" >Register</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+        </div>
+        </nav>
+
+        <section>
+        
+            <div class="register-form-div">
+            <h2 class="register-title">Login</h2>
+        <form  method="POST" id="login-form"  action="/auth/login">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="Enter Email">
+            <br>
+            <br>
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-input" type="password" id="password" name="password" placeholder="Enter Password">
+            <br>
+            <br>
+
+            <input class="button" type="submit" value="Submit">
+        </div>
+        </form>
+         </section>
+
+         <script src="/script.js"></script>
+</body>
+</html>

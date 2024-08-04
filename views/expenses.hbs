@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expense</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-div">
+             <div class="div-navTitle">
+             <h1 class="nav-title">PennyWise</h1>
+             <img class="nav-logo" src="https://th.bing.com/th/id/R.49d5a14318a9684e150d97994dbea9b0?rik=XZ2A4kky5%2bpACg&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fmoney-icon-transparent-background%2fmoney-icon-transparent-background-25.png&ehk=tc0EXgQ%2fk2qFKqmOZg%2fqDcnJXu4HGeFfH3pJPPS6Dj4%3d&risl=&pid=ImgRaw&r=0">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="" >Logout</a></li>
+            </ul>
+            </div>
+            </nav>
+    </header>
+
+    <h1 class="add-title">Add Your Expenses</h1>
+    <div class="add-div" >
+    <label class="add-label" for="category">Category</label>
+    <input class="category-input" type="text" id="category">
+    <br>
+    <br>
+    <label class="add-label" for="amount">Amount</label>
+    <input class="amount-input" type="number" id="amount">
+    <br>
+    <br>
+    <label class="add-label" for="date">Date</label>
+    <input class="date-input" type="date" id="date">
+    <br>
+    <br>
+    <label class="add-label" for="description">Description</label>
+    <textarea id="description" rows="4" cols="50"></textarea>
+    <br>
+    <br>
+    
+    <select id="category" name="category_id">
+             <option value="">Select a category</option>
+             <option>1</option>
+             <option>2</option>
+             <option>3</option>
+             
+            </select>
+            
+    <div class="add-buttons">
+    <button class ="add-button" id="add-button">Add</button>
+  </div>
+<hr>
+
+<div id="transactions">
+  <h2>Transactions</h2>
+</div>
+<div id="budget-settings">
+  <h2>Budget Settings</h2>
+</div>
+
+  <h2 class="expenses-list">Expenses List</h2>
+    <table>
+      <thead>
+        <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>EDIT / DELETE</th>
+        </tr>
+      </thead>
+
+      <tbody id = "expense-table-body">
+
+      </tbody>
+      <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td id="total-amount"></td>
+            <td></td>
+            <td></td>
+            <!-- <td>
+                <input class="edit-button" type="button" value="Edit"> -->
+                
+            </td>
+        </tr>
+      </tfoot>
+    </table>
+
+<script src="script.js"></script>
+</body>
+</html>
