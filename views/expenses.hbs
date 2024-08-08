@@ -23,6 +23,7 @@
     </header>
 
     <h1 class="add-title">Add Your Expenses</h1>
+    <form id="expense-form" action="/add-expense" method="POST">
     <div class="add-div" >
     <label class="add-label" for="category">Category</label>
     <input class="category-input" type="text" id="category">
@@ -41,25 +42,26 @@
     <br>
     <br>
     
-    <select id="category" name="category_id">
+    {{!-- <select id="category" name="category_id">
              <option value="">Select a category</option>
              <option>1</option>
              <option>2</option>
              <option>3</option>
              
-            </select>
+            </select> --}}
             
     <div class="add-buttons">
     <button class ="add-button" id="add-button">Add</button>
   </div>
+  </form>
 <hr>
 
-<div id="transactions">
+{{!-- <div id="transactions">
   <h2>Transactions</h2>
 </div>
 <div id="budget-settings">
   <h2>Budget Settings</h2>
-</div>
+</div> --}}
 
   <h2 class="expenses-list">Expenses List</h2>
     <table>
