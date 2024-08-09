@@ -8,6 +8,6 @@ router.post('/add', (req, res) => {
   expensesController.addExpense(req, res);
 });
 
-router.get('/', expensesController.getExpenses);
-
+router.get('/get', expensesController.getExpenses);
+router.delete('/delete/:id', expensesController.delete);
 module.exports = router;
