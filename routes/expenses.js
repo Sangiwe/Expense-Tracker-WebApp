@@ -10,4 +10,6 @@ router.post('/add', (req, res) => {
 
 router.get('/get', expensesController.getExpenses);
 router.delete('/delete/:id', expensesController.delete);
+router.put('/edit/:id', expensesController.update);
+
 module.exports = router;

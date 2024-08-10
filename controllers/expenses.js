@@ -64,13 +64,26 @@ exports.delete = (req, res) => {
   });
 };
 
-//   return db.query(query, [expenseId], (err, results) => {
-    
-//     if (err) {
-//       console.error(err);
-//       return res.status(500).json({ message: 'Internal Server Error' });
-//     }
-//     console.log(results);
-//     return res.status(200).json(results);
-//   });
-// };
+exports.update = (req, res) => {
+  const { id } = req.params;
+  const { category_id, amount, date, description } = req.body;
+
+  const query = `
+    UPDATE expenses
+    SET category_id = ?, amount = ?, date = ?, description = ?, updated_at = NOW()
+    WHERE expense_id = ?
+  `;
+
+  db.query(query, [category_id, amount, date, description, id], (err, result) => {
+    if (err) {
+      console.error('Error updating expense:', err);
+      return res.status(500).json({ message: 'Failed to update expense' });
+    }
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: 'Expense not found' });
+    }
+
+    return res.status(200).json({ message: 'Expense updated successfully' });
+  });
+};
